@@ -27,7 +27,7 @@ main()
 
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(100,100,COLOR_WHITE);
+  drawPixel(150,150,COLOR_WHITE);
 
   //sudocode for my project
   /*

@@ -1,9 +1,10 @@
-#ifndef STATE_FUNCTIONS_H
-#define STATE_FUNCTIONS_H
 
-// Declare function prototypes
-void state0();
-void state1();
-void state2();
+#ifndef state_included
+#define state_included
 
-#endif // STATE_FUNCTIONS_H
+
+void state0
+void state1
+void state2
+
+#endif

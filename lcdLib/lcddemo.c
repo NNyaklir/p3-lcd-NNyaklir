@@ -34,7 +34,7 @@ main()
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
   drawPixel(127,159,COLOR_WHITE); //upper range is 127,159
-  drawPixel()
+  
 
   //state 1
   fillRectangle(0,0,127,91,COLOR_LIGHT_BLUE);

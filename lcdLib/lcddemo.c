@@ -33,7 +33,7 @@ main()
 
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(128,158,COLOR_WHITE); //upper range is 129,159
+  drawPixel(127,157,COLOR_WHITE); //upper range is 129,159
 
   int prevB1State = 1; // Previous state of button 1
 

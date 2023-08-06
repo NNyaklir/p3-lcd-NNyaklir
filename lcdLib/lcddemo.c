@@ -64,6 +64,7 @@ main()
 
         if(currentState==stateTwo)
         {
+          currentState=stateOne;
           clearScreen(COLOR_PURPLE);
 
         }

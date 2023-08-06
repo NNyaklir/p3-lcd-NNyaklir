@@ -33,7 +33,7 @@ main()
 
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(129,159,COLOR_WHITE); //upper range is 129,159
+  drawPixel(128,158,COLOR_WHITE); //upper range is 129,159
 
   int prevB1State = 1; // Previous state of button 1
 
@@ -55,19 +55,21 @@ main()
         {
           currentState = stateOne;
           clearScreen(COLOR_PURPLE);
-
+          __delay_cycles(200000);
         }
 
         if(currentState==stateOne)
         {
           currentState =stateTwo;
           clearScreen(COLOR_GREEN);
+          __delay_cycles(200000);
         }
 
         if(currentState==stateTwo)
         {
           currentState=stateOne;
           clearScreen(COLOR_PURPLE);
+          __delay_cycles(200000);
 
         }
       }
@@ -75,7 +77,7 @@ main()
       prevB1State=b1State;
 
       // Add a delay to avoid button bounce issues
-      __delay_cycles(200000);
+      
 
     }
   }

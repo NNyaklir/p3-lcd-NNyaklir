@@ -12,7 +12,7 @@ typedef enum {
 State currentState = stateInitial;
 
 int prevB1State = 1; // Previous state of button 1
-int buttonPressed = 0; // Flag to indicate button press
+int debounceFlag = 0; // Flag to indicate a stable button press
 
 void debounce() {
     // Read the button state
@@ -21,7 +21,7 @@ void debounce() {
     if (b1State != prevB1State) {
         __delay_cycles(2000); // Add a small delay for debounce
         if (b1State == (P2IN & SW1)) {
-            buttonPressed = 1; // Set the flag if the button press is stable
+            debounceFlag = 1;
             prevB1State = b1State;
         }
     }
@@ -42,13 +42,13 @@ int main() {
     drawPixel(129, 159, COLOR_WHITE); // upper range is 129,159
 
     while (1) {
-        // Update the buttonPressed flag
-        buttonPressed = 0;
+        // Update the debounce flag
+        debounceFlag = 0;
 
         // Check for a stable button press
         debounce();
 
-        if (buttonPressed) {
+        if (debounceFlag) {
             // Handle state transitions based on the button press
             if (currentState == stateInitial) {
                 currentState = stateOne;

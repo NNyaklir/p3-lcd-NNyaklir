@@ -38,12 +38,12 @@ main()
   //state 1
   fillRectangle(0,0,127,91,COLOR_LIGHT_BLUE);
   fillRectangle(0,92,127,159,COLOR_LIME_GREEN);
-  fillRectangle(39,92,88,159,COLOR_FIREBRICK);
-  fillRectangle(57,65,72,91,COLOR_BROWN);
-  fillRectangle(31,35,37,91,COLOR_WHITE);
-  fillRectangle(85,35,92,91,COLOR_WHITE);
-  fillRectangle(32,30,90,34,COLOR_WHITE);
-  fillRectangle(37,25,86,29,COLOR_WHITE);
+  //fillRectangle(39,92,88,159,COLOR_FIREBRICK);
+  //fillRectangle(57,65,72,91,COLOR_BROWN);
+  //fillRectangle(31,35,37,91,COLOR_WHITE);
+  //fillRectangle(85,35,92,91,COLOR_WHITE);
+  //fillRectangle(32,30,90,34,COLOR_WHITE);
+  //fillRectangle(37,25,86,29,COLOR_WHITE);
 
   int prevB1State = 1; // Previous state of button 1
 

@@ -7,7 +7,7 @@
 #include "lcdutils.h"
 #include "lcddraw.h"
 
-#define SW1 BIT1
+#define SW1 BIT2
 
 
 

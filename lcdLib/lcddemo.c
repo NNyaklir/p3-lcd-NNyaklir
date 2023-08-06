@@ -39,10 +39,6 @@ main()
 
   while(1)
   {
-    
-
-    while(1)
-    {
       //read current button press
       int b1State = (P2IN & SW1) ? 1 : 0;
 
@@ -77,9 +73,7 @@ main()
       // Add a delay to avoid button bounce issues
       __delay_cycles(200000);
 
+      
     }
-  }
-
-  
-
+    return 0;
   }

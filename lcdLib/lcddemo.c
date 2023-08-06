@@ -27,7 +27,7 @@ main()
 
   fillRectangle(30,30, 60, 60, COLOR_ORANGE);
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(125,157,COLOR_WHITE); //upper range is 150,750
+  drawPixel(125,160,COLOR_WHITE); //upper range is 150,750
 
 
 

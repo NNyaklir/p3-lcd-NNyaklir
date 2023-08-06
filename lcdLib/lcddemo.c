@@ -58,23 +58,17 @@ main()
 
         }
 
-        else if(currentState==stateOne)
+        if(currentState==stateOne)
         {
           currentState =stateTwo;
           clearScreen(COLOR_GREEN);
-          toggle = 0;
         }
 
-        else if(currentState==stateTwo)
+        if(currentState==stateTwo)
         {
-          if(toggle==0)
-          {
-            toggle =1;
-          }
-          else
-          {
-            clearScreen(COLOR_PURPLE);
-          }
+          currentState=stateOne;
+          clearScreen(COLOR_PURPLE);
+
         }
       }
 

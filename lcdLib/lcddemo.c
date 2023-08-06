@@ -27,7 +27,13 @@ main()
   lcd_init();
   u_char width = screenWidth, height = screenHeight;
 
-  state0();
+  clearScreen(COLOR_BLUE);
+
+  drawString5x7(20,20, "hello", COLOR_GREEN, COLOR_RED);
+
+  fillRectangle(30,30, 60, 60, COLOR_ORANGE);
+  drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
+  drawPixel(129,159,COLOR_WHITE); //upper range is 129,159
 
   int prevB1State = 1; // Previous state of button 1
 
@@ -48,20 +54,20 @@ main()
 
         {
           currentState = stateOne;
-          state1();
+          clearScreen(COLOR_PURPLE);
 
         }
 
         if(currentState==stateOne)
         {
           currentState =stateTwo;
-          state2();
+          clearScreen(COLOR_GREEN);
         }
 
         if(currentState==stateTwo)
         {
           currentState=stateOne;
-          state1();
+          clearScreen(COLOR_PURPLE);
 
         }
       }
@@ -74,27 +80,6 @@ main()
     }
   }
 
-  state0()
-  {
-  clearScreen(COLOR_BLUE);
-
-  drawString5x7(20,20, "hello", COLOR_GREEN, COLOR_RED);
-
-  fillRectangle(30,30, 60, 60, COLOR_ORANGE);
-  drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(129,159,COLOR_WHITE); //upper range is 129,159
-
-  }
-
-  state1()
-  {
-    clearScreen(COLOR_PURPLE);
-  }
-
-  state2()
-  {
-    clearScreen(COLOR_GREEN);
-  }
 
   
 }

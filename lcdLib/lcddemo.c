@@ -35,9 +35,11 @@ main()
   drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
   drawPixel(129,159,COLOR_WHITE); //upper range is 129,159
 
+  int prevB1State = 1; // Previous state of button 1
+
   while(1)
   {
-    int prevB1State = 1; // Previous state of button 1
+    
 
     while(1)
     {
@@ -79,19 +81,5 @@ main()
   }
 
 
-  //sudocode for my project
-  /*
-    if(state==state1){
-      button press x
-      state==state2
-    }
-    if(state==state2){
-      button pressy 
-      state==state3
-    }
-    if(state==state3){
-      button press z
-      state==state2
-    }
-  */
+  
 }

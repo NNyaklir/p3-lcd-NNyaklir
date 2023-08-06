@@ -36,7 +36,6 @@ main()
   drawPixel(129,159,COLOR_WHITE); //upper range is 129,159
 
   int prevB1State = 1; // Previous state of button 1
-  int toggle = 0;
 
   while(1)
   {

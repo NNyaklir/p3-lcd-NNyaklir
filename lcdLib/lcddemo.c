@@ -6,7 +6,7 @@
 #include <libTimer.h>
 #include "lcdutils.h"
 #include "lcddraw.h"
-#include "state.h"
+#include "lcddemo.h"
 
 #define SW1 BIT0
 

@@ -75,7 +75,11 @@ main()
     }
   }
 
-  state0()
+  
+
+  
+}
+state0()
   {
   clearScreen(COLOR_BLUE);
 
@@ -96,6 +100,3 @@ main()
   {
     clearScreen(COLOR_GREEN);
   }
-
-  
-}

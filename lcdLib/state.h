@@ -1,10 +1,6 @@
-
-#ifndef state_included
 #define state_included
 
+#define  state0
+#define state1
+#define state2
 
-void state0
-void state1
-void state2
-
-#endif

@@ -2,11 +2,15 @@
  *  \brief A simple demo that draws a string and square
  */
 
+#include <msp430.h>
 #include <libTimer.h>
 #include "lcdutils.h"
 #include "lcddraw.h"
 
 #define SW1 BIT0
+
+
+
 
 typedef enum{
   stateInitial,stateOne,stateTwo,

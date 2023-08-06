@@ -37,9 +37,8 @@ main()
   
 
   //state 1
-  fillRectangle(0,0,127,91,COLOR_LIGHT_BLUE);
-  fillRectangle(0,92,127,159,COLOR_LIME_GREEN);
-  fillRectangle(0,0,91,127,COLOR_LIGHT_BLUE);
+  fillRectangle(0,0,128,91,COLOR_LIGHT_BLUE);
+  fillRectangle(0,92,128,159,COLOR_LIME_GREEN);
   
   //fillRectangle(39,92,88,159,COLOR_FIREBRICK);
   //fillRectangle(57,65,72,91,COLOR_BROWN);

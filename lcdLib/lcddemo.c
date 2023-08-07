@@ -47,6 +47,9 @@ main()
   fillRectangle(32,30,58,4,COLOR_WHITE);
   fillRectangle(37,25,49,4,COLOR_WHITE);
 
+  fillRectangle(16,73,11,1,COLOR_BLACK);
+  drawPixel(28,74,COLOR_BLACK);
+
   int prevB1State = 1; // Previous state of button 1
 
   while(1)

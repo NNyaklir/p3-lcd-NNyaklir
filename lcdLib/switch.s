@@ -1,15 +1,20 @@
+    .text
+    .global main2
+
+    .sect ".data"
 JT:
     .word default
     .word case1
-    .word case1
-    .global main
+    .word case2
 
+    .sect ".text"
 main2:
-    MOV &correct,r12
-    CMP #6,r12
+    MOV &correct, r12
+    CMP #6, r12
     JGE default
-    ADD r12,r12 
-    MOV JT(r12),r0
+    ADD r12, r12
+    MOV @JT(r12), r0
+    JMP r0
 
 case1:
     CALL #state1
@@ -24,3 +29,5 @@ default:
 
 esc:
     POP r0
+
+    .end

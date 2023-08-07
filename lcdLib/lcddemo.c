@@ -98,8 +98,9 @@ main()
   drawPixel(103,88,COLOR_ORANGE);
 
   //words
-  drawString5x7(7,106,"Why couldn't the watermelon and",COLOR_WHITE,COLOR_BLACK);
-  drawString5x7(18,106,"the melon get married?",COLOR_WHITE,COLOR_BLACK);
+  drawString5x7(7,106,"Why couldn't the",COLOR_WHITE,COLOR_BLACK);
+  drawString5x7(7,112,"watermelon and the ",COLOR_WHITE,COLOR_BLACK);
+  drawString5x7(7,118,"melon get married?",COLOR_WHITE,COLOR_BLACK);
 
   
 
@@ -118,7 +119,7 @@ main()
       if(P1IN && BIT0)
       {
         int stopSongFlag=0;
-        for(int i=0;!stopSongFlag;i++)
+        while(!stopSongFlag)
         {
         if(currentState==stateInitial)
 
@@ -189,7 +190,8 @@ main()
             drawPixel(73,87,COLOR_BEIGE);
             drawPixel(75,85,COLOR_BEIGE);
 
-            drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
+            drawString5x7(7,106,"Because they",COLOR_WHITE,COLOR_BLACK);
+            drawString5x7(7,112,"cantaloupe",COLOR_WHITE,COLOR_BLACK);
             stopSongFlag=1;
           __delay_cycles(200000);
         }
@@ -268,8 +270,9 @@ main()
           drawPixel(103,88,COLOR_ORANGE);
 
           //words
-          drawString5x7(7,106,"Why couldn't the watermelon and",COLOR_WHITE,COLOR_BLACK);
-          drawString5x7(18,106,"the melon get married?",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(7,106,"Why couldn't the",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(7,112,"watermelon and the ",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(7,118,"melon get married?",COLOR_WHITE,COLOR_BLACK);
           stopSongFlag=1;
 
           __delay_cycles(200000);
@@ -343,7 +346,8 @@ main()
           drawPixel(73,87,COLOR_BEIGE);
           drawPixel(75,85,COLOR_BEIGE);
 
-          drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(7,106,"Because they",COLOR_WHITE,COLOR_BLACK);
+            drawString5x7(7,112,"cantaloupe",COLOR_WHITE,COLOR_BLACK);
           stopSongFlag=1;
           __delay_cycles(200000);
 

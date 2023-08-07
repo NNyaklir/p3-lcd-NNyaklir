@@ -20,7 +20,7 @@ main2:
     MOV &JT, r13        ; Load the address of JT into r13
     ADD r13, r12        ; Add the index to the base address of JT
     MOV @r12, r0        ; Access the value from JT using indexed addressing
-    JMP @r0
+    ;JMP @r0
 
 case1:
     CALL #state1

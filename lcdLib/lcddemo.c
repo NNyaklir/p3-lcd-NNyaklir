@@ -117,6 +117,7 @@ main()
       //check for button press
       if(P1IN && BIT0)
       {
+        int stopSongFlag=0;
         for(!stopSongFlag)
         {
         if(currentState==stateInitial)
@@ -189,6 +190,7 @@ main()
             drawPixel(75,85,COLOR_BEIGE);
 
             drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
+            stopSongFlag=1;
           __delay_cycles(200000);
         }
 
@@ -268,6 +270,7 @@ main()
           //words
           drawString5x7(7,106,"Why couldn't the watermelon and",COLOR_WHITE,COLOR_BLACK);
           drawString5x7(18,106,"the melon get married?",COLOR_WHITE,COLOR_BLACK);
+          stopSongFlag=1;
 
           __delay_cycles(200000);
         }
@@ -341,6 +344,7 @@ main()
           drawPixel(75,85,COLOR_BEIGE);
 
           drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
+          stopSongFlag=1;
           __delay_cycles(200000);
 
         }

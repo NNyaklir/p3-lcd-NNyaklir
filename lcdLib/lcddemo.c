@@ -119,7 +119,7 @@ main()
       if(P1IN && BIT0)
       {
         int stopSongFlag=0;
-        while(!stopSongFlag)
+        while(stopSongFlag==0)
         {
         if(currentState==stateInitial)
 

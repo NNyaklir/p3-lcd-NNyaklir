@@ -16,7 +16,9 @@ main2:
     MOV &JT, r13
     ADD r13, r12
     MOV @r12, r0
-    JMP @r0
+    MOV r0, r15          ; Store value in r0 to r15 (temporary register)
+    MOV &esc, r15        ; Load the address of the 'esc' label into r15
+    JMP @r15
 
 case1:
     CALL #state1

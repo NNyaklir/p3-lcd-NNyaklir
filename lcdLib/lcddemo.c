@@ -116,10 +116,10 @@ main()
       int b1State = (P2IN & SW1) ? 1 : 0;
 
       //check for button press
-      if(P1IN && BIT0)
+      if(b1State==0 && prevB1State==1)
       {
         int stopSongFlag=0;
-        while(stopSongFlag==0)
+        while(!stopSongFlag==1)
         {
         if(currentState==stateInitial)
 

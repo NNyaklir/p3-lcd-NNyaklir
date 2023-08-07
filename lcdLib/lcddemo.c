@@ -19,7 +19,6 @@ typedef enum{
   State currentState=stateInitial;
 
 
-/** Initializes everything, clears the screen, draws "hello" and a square */
 int
 main()
 {
@@ -27,20 +26,12 @@ main()
   lcd_init();
   u_char width = screenWidth, height = screenHeight;
 
-  clearScreen(COLOR_BLUE);
-
-  drawString5x7(20,20, "hello", COLOR_GREEN, COLOR_RED);
-
-  fillRectangle(30,30, 60, 60, COLOR_ORANGE);
-  drawPixel(0,0,COLOR_WHITE); //bit (0,0) is in the top left
-  drawPixel(127,159,COLOR_WHITE); //upper range is 128,159
   
-
   //state 1
   fillRectangle(0,0,128,92,COLOR_LIGHT_BLUE);
   fillRectangle(0,92,128,159,COLOR_LIME_GREEN);
   
-  fillRectangle(39,92,44,159,COLOR_FIREBRICK);
+  fillRectangle(39,92,44,159,COLOR_RED);
   fillRectangle(57,65,15,26,COLOR_BROWN);
   fillRectangle(31,35,6,56,COLOR_WHITE);
   fillRectangle(85,35,7,56,COLOR_WHITE);
@@ -86,6 +77,41 @@ main()
   drawPixel(28,89,COLOR_DARK_GREEN);
   drawPixel(28,88,COLOR_DARK_GREEN);
   drawPixel(29,88,COLOR_DARK_GREEN);
+
+  fillRectangle(89,81,17,5,COLOR_ORANGE);
+  fillRectangle(93,76,9,14,COLOR_ORANGE);
+  fillRectangle(90,79,3,2,COLOR_ORANGE);
+  fillRectangle(102,79,3,2,COLOR_ORANGE);
+  fillRectangle(90,86,3,2,COLOR_ORANGE);
+  fillRectangle(102,86,3,2,COLOR_ORANGE);
+  drawPixel(91,78,COLOR_ORANGE);
+  drawPixel(92,78,COLOR_ORANGE);
+  drawPixel(92,77,COLOR_ORANGE);
+  drawPixel(102,77,COLOR_ORANGE);
+  drawPixel(102,78,COLOR_ORANGE);
+  drawPixel(103,78,COLOR_ORANGE);
+  drawPixel(91,88,COLOR_ORANGE);
+  drawPixel(92,87,COLOR_ORANGE);
+  drawPixel(92,89,COLOR_ORANGE);
+  drawPixel(102,89,COLOR_ORANGE);
+  drawPixel(102,88,COLOR_ORANGE);
+  drawPixel(103,88,COLOR_ORANGE);
+
+  //words
+  drawString5x7(7,106,"Why couldn't the watermelon and");
+  drawString5x7(18,106,"the melon get married?");
+
+  //state 2
+  fillRectangle(0,0,128,92,COLOR_LIGHT_BLUE);
+  fillRectangle(0,92,128,159,COLOR_LIME_GREEN);
+  
+  fillRectangle(39,92,44,159,COLOR_RED);
+  fillRectangle(57,65,15,26,COLOR_BROWN);
+  fillRectangle(31,35,6,56,COLOR_WHITE);
+  fillRectangle(85,35,7,56,COLOR_WHITE);
+  fillRectangle(32,30,58,4,COLOR_WHITE);
+  fillRectangle(37,25,49,4,COLOR_WHITE);
+
 
   int prevB1State = 1; // Previous state of button 1
 

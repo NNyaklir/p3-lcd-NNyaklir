@@ -353,7 +353,7 @@ main()
 
         }
         }
-        stopSongFlag=0;
+        //stopSongFlag=0;
       }
 
       prevB1State=b1State;

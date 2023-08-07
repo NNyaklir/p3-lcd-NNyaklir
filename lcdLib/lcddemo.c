@@ -115,9 +115,10 @@ main()
       int b1State = (P2IN & SW1) ? 1 : 0;
 
       //check for button press
-      if(b1State==0 && prevB1State==1)
+      if(P1IN && BIT0)
       {
-
+        for(!stopSongFlag)
+        {
         if(currentState==stateInitial)
 
         {
@@ -343,6 +344,8 @@ main()
           __delay_cycles(200000);
 
         }
+        }
+        stopSongFlag=0;
       }
 
       prevB1State=b1State;

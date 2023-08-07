@@ -11,6 +11,7 @@
 #include "lcdutils.h"
 #include "msp430.h"
 
+volatile unsigned int stopSongFlag = 0;
 u_char _orientation = 0;
 
 /** LCD pin definitions*/

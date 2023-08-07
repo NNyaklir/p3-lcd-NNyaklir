@@ -100,7 +100,7 @@ main()
   //words
   drawString5x7(7,106,"Why couldn't the",COLOR_WHITE,COLOR_BLACK);
   drawString5x7(7,114,"watermelon and the ",COLOR_WHITE,COLOR_BLACK);
-  drawString5x7(7,121,"melon get married?",COLOR_WHITE,COLOR_BLACK);
+  drawString5x7(7,126,"melon get married?",COLOR_WHITE,COLOR_BLACK);
 
   
 
@@ -272,7 +272,7 @@ main()
           //words
           drawString5x7(7,106,"Why couldn't the",COLOR_WHITE,COLOR_BLACK);
           drawString5x7(7,116,"watermelon and the ",COLOR_WHITE,COLOR_BLACK);
-          drawString5x7(7,121,"melon get married?",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(7,126,"melon get married?",COLOR_WHITE,COLOR_BLACK);
           stopSongFlag=1;
 
           __delay_cycles(200000);

@@ -13,8 +13,10 @@ main2:
     CMP #6, r12
     JGE default
     ADD r12, r12
-    MOV @JT(r12), r0
-    JMP r0
+    MOV &JT, r13
+    ADD r13, r12
+    MOV @r12, r0
+    JMP @r0
 
 case1:
     CALL #state1

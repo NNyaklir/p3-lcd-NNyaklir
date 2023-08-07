@@ -68,6 +68,25 @@ main()
   drawPixel(14,89,COLOR_BLACK);
   drawPixel(15,90,COLOR_BLACK);
 
+  fillRectangle(12,79,19,6,COLOR_DARK_GREEN);
+  fillRectangle(16,74,11,16,COLOR_DARK_GREEN);
+  fillRectangle(13,77,4,3,COLOR_DARK_GREEN);
+  fillRectangle(27,77,4,3,COLOR_DARK_GREEN);
+  fillRectangle(13,85,4,3,COLOR_DARK_GREEN);
+  fillRectangle(27,85,4,3,COLOR_DARK_GREEN);
+  drawPixel(14,76,COLOR_DARK_GREEN);
+  drawPixel(15,76,COLOR_DARK_GREEN);
+  drawpixel(15,75,COLOR_DARK_GREEN);
+  drawpixel(28,75,COLOR_DARK_GREEN);
+  drawPixel(28,76,COLOR_DARK_GREEN);
+  drawPixel(29,76,COLOR_DARK_GREEN);
+  drawPixel(14,88,COLOR_DARK_GREEN);
+  drawPixel(15,88,COLOR_DARK_GREEN);
+  drawPixel(15,89,COLOR_DARK_GREEN);
+  drawPixel(28,89,COLOR_DARK_GREEN);
+  drawPixel(28,88,COLOR_DARK_GREEN);
+  drawPixel(29,88,COLOR_DARK_GREEN);
+
   int prevB1State = 1; // Previous state of button 1
 
   while(1)

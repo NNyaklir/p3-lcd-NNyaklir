@@ -4,7 +4,7 @@ JT:
     .word case1
     .global main
 
-main:
+main2:
     mov &correct,r12
     cmp #6,r12
     jge default

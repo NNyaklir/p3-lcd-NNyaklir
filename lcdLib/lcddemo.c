@@ -76,7 +76,7 @@ main()
   fillRectangle(27,85,4,3,COLOR_DARK_GREEN);
   drawPixel(14,76,COLOR_DARK_GREEN);
   drawPixel(15,76,COLOR_DARK_GREEN);
-  drawpixel(15,75,COLOR_DARK_GREEN);
+  drawPixel(15,75,COLOR_DARK_GREEN);
   drawpixel(28,75,COLOR_DARK_GREEN);
   drawPixel(28,76,COLOR_DARK_GREEN);
   drawPixel(29,76,COLOR_DARK_GREEN);

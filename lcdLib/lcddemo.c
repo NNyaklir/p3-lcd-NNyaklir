@@ -196,7 +196,7 @@ main()
           __delay_cycles(200000);
         }
 
-        if(currentState==stateOne)
+        else if(currentState==stateOne)
         {
           currentState =stateTwo;
           //state 1
@@ -278,7 +278,7 @@ main()
           __delay_cycles(200000);
         }
 
-        if(currentState==stateTwo)
+        else if(currentState==stateTwo)
         {
           currentState=stateOne;
           //state 2

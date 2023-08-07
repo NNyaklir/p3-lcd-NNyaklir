@@ -13,8 +13,7 @@ libLcd.a: font-11x16.o font-5x7.o font-8x12.o lcdutils.o lcddraw.o
 
 lcddraw.o: lcddraw.c lcddraw.h lcdutils.h
 lcdutils.o: lcdutils.c lcdutils.h
-switch.o: switch.s
-	$(AS) -o $@ $<
+
 
 install: libLcd.a
 	mkdir -p ../h ../lib
@@ -24,7 +23,7 @@ install: libLcd.a
 clean:
 	rm -f libLcd.a *.o *.elf
 
-lcddemo.elf: lcddemo.o libLcd.a switch.o
+lcddemo.elf: lcddemo.o libLcd.a
 	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@ -lTimer 
 
 load: lcddemo.elf

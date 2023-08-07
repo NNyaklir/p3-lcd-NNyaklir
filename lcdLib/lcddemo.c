@@ -98,8 +98,8 @@ main()
   drawPixel(103,88,COLOR_ORANGE);
 
   //words
-  drawString5x7(7,106,"Why couldn't the watermelon and");
-  drawString5x7(18,106,"the melon get married?");
+  drawString5x7(7,106,"Why couldn't the watermelon and",COLOR_WHITE,COLOR_BLACK);
+  drawString5x7(18,106,"the melon get married?",COLOR_WHITE,COLOR_BLACK);
 
   
 
@@ -187,7 +187,7 @@ main()
             drawPixel(73,87,COLOR_BEIGE);
             drawPixel(75,85,COLOR_BEIGE);
 
-            drawString5x7(7,106,"Because they cantaloupe");
+            drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
           __delay_cycles(200000);
         }
 
@@ -265,8 +265,8 @@ main()
           drawPixel(103,88,COLOR_ORANGE);
 
           //words
-          drawString5x7(7,106,"Why couldn't the watermelon and");
-          drawString5x7(18,106,"the melon get married?");
+          drawString5x7(7,106,"Why couldn't the watermelon and",COLOR_WHITE,COLOR_BLACK);
+          drawString5x7(18,106,"the melon get married?",COLOR_WHITE,COLOR_BLACK);
 
           __delay_cycles(200000);
         }
@@ -339,7 +339,7 @@ main()
           drawPixel(73,87,COLOR_BEIGE);
           drawPixel(75,85,COLOR_BEIGE);
 
-          drawString5x7(7,106,"Because they cantaloupe");
+          drawString5x7(7,106,"Because they cantaloupe",COLOR_WHITE,COLOR_BLACK);
           __delay_cycles(200000);
 
         }

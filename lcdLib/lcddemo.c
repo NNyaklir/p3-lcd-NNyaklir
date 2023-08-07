@@ -118,7 +118,7 @@ main()
       if(P1IN && BIT0)
       {
         int stopSongFlag=0;
-        for(i=0;!stopSongFlag,i++)
+        for(i=0;!stopSongFlag;i++)
         {
         if(currentState==stateInitial)
 

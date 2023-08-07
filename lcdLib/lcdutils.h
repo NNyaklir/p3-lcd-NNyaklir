@@ -55,6 +55,8 @@ void lcd_setArea(u_char colStart, u_char rowStart, u_char colEnd, u_char rowEnd)
  */
 void lcd_writeColor(u_int colorBGR);
 
+void PORT2_ISR()
+
 #define rgb2bgr(val) ((((val) << 11)&0xf800) | ((val)&0x7e0) | (((val)>>11)&0x1f))
 
 /** Colors */

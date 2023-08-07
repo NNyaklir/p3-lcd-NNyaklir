@@ -159,3 +159,9 @@ void lcd_init()
   }
 }
 
+#pragma vector=PORT2_VECTOR
+interrupt void PORT2_ISR(void)
+{
+    stopSongFlag = 1; // Set flag to stop the song
+    P2IFG &= ~BIT0;  // Clear interrupt flag
+}

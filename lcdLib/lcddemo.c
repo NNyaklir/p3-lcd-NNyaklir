@@ -112,6 +112,61 @@ main()
   fillRectangle(32,30,58,4,COLOR_WHITE);
   fillRectangle(37,25,49,4,COLOR_WHITE);
 
+  //cantelope
+  fillRectangle(54,70,16,1,COLOR_BLACK);
+  fillRectangle(77,77,1,7,COLOR_BLACK);
+  fillRectangle(54,91,16,1,COLOR_BLACK);
+  fillRectangle(47,77,1,7,COLOR_BLACK);
+  drawPixel(71,71,COLOR_BLACK);
+  drawPixel(72,72,COLOR_BLACK);
+  drawPixel(73,73,COLOR_BLACK);
+  drawPixel(74,74,COLOR_BLACK);
+  drawPixel(75,75,COLOR_BLACK);
+  drawPixel(76,76,COLOR_BLACK);
+  drawPixel(53,71,COLOR_BLACK);
+  drawPixel(52,72,COLOR_BLACK);
+  drawPixel(51,73,COLOR_BLACK);
+  drawPixel(50,74,COLOR_BLACK);
+  drawPixel(49,75,COLOR_BLACK);
+  drawPixel(48,76,COLOR_BLACK);
+  drawPixel(48,85,COLOR_BLACK);
+  drawPixel(49,86,COLOR_BLACK);
+  drawPixel(50,87,COLOR_BLACK);
+  drawPixel(51,88,COLOR_BLACK);
+  drawPixel(52,89,COLOR_BLACK);
+  drawPixel(53,90,COLOR_BLACK);
+  drawPixel(71,90,COLOR_BLACK);
+  drawPixel(72,89,COLOR_BLACK);
+  drawPixel(73,88,COLOR_BLACK);
+  drawPixel(74,87,COLOR_BLACK);
+  drawPixel(75,86,COLOR_BLACK);
+  drawPixel(76,85,COLOR_BLACK);
+
+  //color
+  fillRectangle(48,77,29,8,COLOR_BEIGE);
+  fillRectangle(54,71,17,20,COLOR_BEIGE);
+  fillRectangle(50,75,4,2,COLOR_BEIGE);
+  fillRectangle(52,73,2,2,COLOR_BEIGE);
+  fillRectangle(71,73,2,4,COLOR_BEIGE);
+  fillRectangle(73,73,2,2,COLOR_BEIGE);
+  fillRectangle(50,85,4,2,COLOR_BEIGE);
+  fillRectangle(52,87,2,2,COLOR_BEIGE);
+  fillRectangle(71,85,2,4,COLOR_BEIGE);
+  fillRectangle(73,85,2,2,COLOR_BEIGE);
+  drawPixel(49,76,COLOR_BEIGE);
+  drawPixel(51,74,COLOR_BEIGE);
+  drawPixel(53,72,COLOR_BEIGE);
+  drawPixel(71,72,COLOR_BEIGE);
+  drawPixel(73,74,COLOR_BEIGE);
+  drawPixel(75,76,COLOR_BEIGE);
+  drawPixel(49,85,COLOR_BEIGE);
+  drawPixel(51,87,COLOR_BEIGE);
+  drawPixel(53,89,COLOR_BEIGE);
+  drawPixel(71,89,COLOR_BEIGE);
+  drawPixel(73,87,COLOR_BEIGE);
+  drawPixel(75,85,COLOR_BEIGE);
+
+  drawString5x7(7,106,"Because they cantaloupe");
 
   int prevB1State = 1; // Previous state of button 1
 

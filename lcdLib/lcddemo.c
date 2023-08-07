@@ -352,6 +352,7 @@ main()
           __delay_cycles(200000);
 
         }
+        stopSongFlag=1;
 
         }
         stopSongFlag=0;

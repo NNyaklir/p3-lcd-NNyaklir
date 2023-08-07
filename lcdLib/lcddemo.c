@@ -352,8 +352,9 @@ main()
           __delay_cycles(200000);
 
         }
+
         }
-        //stopSongFlag=0;
+        stopSongFlag=0;
       }
 
       prevB1State=b1State;

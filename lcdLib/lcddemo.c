@@ -119,7 +119,7 @@ main()
       if(b1State==0 && prevB1State==1)
       {
         int stopSongFlag=0;
-        while(!stopSongFlag==1)
+        while(stopSongFlag==0)
         {
         if(currentState==stateInitial)
 
@@ -352,7 +352,7 @@ main()
           __delay_cycles(200000);
 
         }
-        stopSongFlag=1;
+        //stopSongFlag=1;
 
         }
         //stopSongFlag=0;
